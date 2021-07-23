@@ -15,10 +15,20 @@ body {
   max-width: 1160px;
   margin: auto;
 }
+.hero-bg {
+  background-image: url(./assets/Decore.svg);
+  background-repeat: no-repeat;
+  background-position: 100% 0;
+}
 
-.highlight {
-  font-weight: 600;
-  color: orange;
+.button-decoration {
+  text-decoration: none;
+  font-size: 16px;
+  background-color: orange;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
 }
 
 h1,
@@ -31,9 +41,17 @@ h6 {
 }
 .section-intro {
   text-align: center;
-  margin: 20px 0;
-  /* border: 1px solid red; */
 }
+.section-intro p {
+  font-size: 18px;
+  font-weight: 700;
+}
+.section-intro h2 {
+  font-size: 50px;
+  color: #14183e;
+  margin-bottom: 24px;
+}
+
 /* Navbar */
 
 .navbar {
@@ -61,6 +79,10 @@ h6 {
   display: flex;
   align-items: center;
 }
+.intro-text {
+  max-width: 50%;
+}
+
 .intro-text h1 {
   color: #181e4b;
   letter-spacing: -4%;
@@ -70,6 +92,21 @@ h6 {
 .intro-image img {
   width: 100%;
 }
+
+.highlight {
+  color: orange;
+  position: relative;
+}
+
+.highlight::after {
+  content: url("assets/h2-underline.png");
+  position: absolute;
+  width: 90%;
+  left: 0;
+  top: 35px;
+  z-index: -1;
+}
+
 /* Category */
 .category-section {
   text-align: center;
@@ -127,6 +164,11 @@ h6 {
 }
 
 /* subscribe */
+.subscribe-section {
+  background-image: url(./assets/bg-decor-1.png);
+  background-position: 100% 40%;
+  background-repeat: no-repeat;
+}
 .subscribe-section .container {
   padding: 80px;
   border-radius: 20px;
@@ -199,10 +241,14 @@ h6 {
     justify-content: center;
     align-items: center;
   }
-
-  .intro-text {
-    text-align: center;
+  .highlight::after {
+    left: -75px;
+    top: 25px;
   }
+  .intro-text {
+    max-width: 100%;
+  }
+
   .intro-text h1 {
     width: 100%;
     font-size: 54px;
