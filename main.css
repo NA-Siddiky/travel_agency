@@ -29,7 +29,11 @@ h5,
 h6 {
   font-family: "Volkhov", serif;
 }
-
+.section-intro {
+  text-align: center;
+  margin: 20px 0;
+  /* border: 1px solid red; */
+}
 /* Navbar */
 
 .navbar {
@@ -73,4 +77,76 @@ h6 {
 .categories {
   display: flex;
   justify-content: center;
+}
+.single-category {
+  cursor: pointer;
+  padding: 40px;
+  margin: 16px 10px;
+  /* border: 1px solid orange; */
+  border-radius: 36px;
+  width: 250px;
+  box-shadow: 0 1000px 80px rgba(0, 0, 0, 0.1);
+}
+.single-category:hover {
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.1);
+}
+
+/* Destination */
+.destination {
+  display: flex;
+}
+.single-destination {
+  margin: 10px;
+  border-radius: 24px;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+.single-destination img {
+  width: 100%;
+}
+.single-destination p {
+  padding: 0 16px 10px;
+}
+
+/* Brands */
+.brands {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.brand img {
+  width: 100%;
+}
+
+/* subscribe */
+.subscribe-section .container {
+  padding: 80px;
+  border-radius: 20px;
+  background: #dfd7f9 url("./assets/subscribe-decor-left.png") no-repeat bottom
+    left;
+}
+.subscribe-section h2 {
+  font-family: "Poppins", sans-serif;
+  width: 70%;
+  margin: auto;
+}
+.subscribe-section input {
+  padding: 15px 30px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+}
+.input-group {
+  /* margin: auto;
+  text-align: center; */
+
+  margin-top: 10px;
+  display: inline-block;
+}
+
+/* footer */
+.footer-content {
+  display: flex;
+  padding: 40px 0px;
+  justify-content: space-evenly;
 }
