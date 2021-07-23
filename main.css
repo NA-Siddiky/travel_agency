@@ -16,6 +16,20 @@ body {
   margin: auto;
 }
 
+.highlight {
+  font-weight: 600;
+  color: orange;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Volkhov", serif;
+}
+
 /* Navbar */
 
 .navbar {
@@ -36,4 +50,19 @@ body {
   cursor: pointer;
   margin: 0 6px;
   padding: 6px 16px;
+}
+
+/* Hero */
+.hero-section {
+  display: flex;
+  align-items: center;
+}
+.intro-text h1 {
+  color: #181e4b;
+  letter-spacing: -4%;
+  line-height: 1;
+  font-size: 84px;
+}
+.intro-image img {
+  width: 100%;
 }
