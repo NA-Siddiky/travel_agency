@@ -66,3 +66,11 @@ h6 {
 .intro-image img {
   width: 100%;
 }
+/* Category */
+.category-section {
+  text-align: center;
+}
+.categories {
+  display: flex;
+  justify-content: center;
+}
