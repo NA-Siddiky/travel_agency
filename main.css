@@ -76,6 +76,7 @@ h6 {
 }
 .categories {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 .single-category {
@@ -89,13 +90,18 @@ h6 {
 }
 .single-category:hover {
   box-shadow: 0 30px 80px rgba(0, 0, 0, 0.1);
+  transition: all ease-in-out 0.5s;
 }
 
 /* Destination */
 .destination {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .single-destination {
+  max-width: 300px;
+  margin: 0 auto;
   margin: 10px;
   border-radius: 24px;
   box-shadow: 0 30px 80px rgba(0, 0, 0, 0.1);
@@ -103,6 +109,8 @@ h6 {
 }
 .single-destination img {
   width: 100%;
+  height: 300px;
+  object-fit: cover;
 }
 .single-destination p {
   padding: 0 16px 10px;
@@ -137,11 +145,8 @@ h6 {
   outline: none;
 }
 .input-group {
-  /* margin: auto;
-  text-align: center; */
-
-  margin-top: 10px;
-  display: inline-block;
+  margin: auto;
+  text-align: center;
 }
 
 /* footer */
@@ -149,4 +154,73 @@ h6 {
   display: flex;
   padding: 40px 0px;
   justify-content: space-evenly;
+}
+
+@media screen and (max-width: 1440px) {
+  .container {
+    width: 80px;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    width: 90%;
+    margin: auto;
+  }
+  .hero-section {
+    flex-direction: column-reverse;
+    margin-bottom: 50px;
+  }
+  .brands {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .brands img {
+    width: 200px;
+    height: 110px;
+    margin: 20px 0;
+    padding: 10px 0;
+    /* border: 1px solid red; */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navbar .nav-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .intro-text {
+    text-align: center;
+  }
+  .intro-text h1 {
+    width: 100%;
+    font-size: 54px;
+  }
+
+  .subscribe-section .container {
+    padding: 35px;
+  }
+  .subscribe-section h2 {
+    width: 100%;
+    text-align: justify;
+  }
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-item {
+    margin-bottom: 20px;
+  }
 }
